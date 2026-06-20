@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jeans-dictionary-tool"
+version = "0.1.0"
+description = "Jeans Dictionary Tool: a small CLI dictionary/word tool with word stats and an anagram finder."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "FireReady Australia" }]
+
+[project.scripts]
+jeans = "jeansdict.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+jeansdict = ["data/*.txt"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
