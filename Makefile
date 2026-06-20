@@ -4,7 +4,7 @@ PYTHON ?= python3
 
 help:
 	@echo "Available targets:"
-	@echo "  make install      Install the worddict package (and CLI)"
+	@echo "  make install      Install the Jeans Dictionary Tool package (and CLI)"
 	@echo "  make install-dev  Install in editable mode with test deps"
 	@echo "  make test         Run the pytest test suite"
 	@echo "  make clean        Remove build artifacts and caches"

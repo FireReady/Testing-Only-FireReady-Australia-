@@ -2,7 +2,7 @@
 
 import pytest
 
-from worddict.wordstat import (
+from jeansdict.wordstat import (
     count_consonants,
     count_syllables,
     count_vowels,

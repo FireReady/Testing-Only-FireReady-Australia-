@@ -1,4 +1,4 @@
-"""Command-line interface for worddict."""
+"""Command-line interface for the Jeans Dictionary Tool."""
 
 from __future__ import annotations
 
@@ -33,8 +33,8 @@ def _cmd_anagrams(args: argparse.Namespace) -> int:
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        prog="worddict",
-        description="A small CLI dictionary/word tool.",
+        prog="jeans",
+        description="Jeans Dictionary Tool: a small CLI dictionary/word tool.",
     )
     subparsers = parser.add_subparsers(dest="command", required=True)
 

@@ -3,22 +3,22 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "worddict"
+name = "jeans-dictionary-tool"
 version = "0.1.0"
-description = "A small CLI dictionary/word tool: word stats and anagram finder."
+description = "Jeans Dictionary Tool: a small CLI dictionary/word tool with word stats and an anagram finder."
 readme = "README.md"
 requires-python = ">=3.9"
 license = { text = "MIT" }
 authors = [{ name = "FireReady Australia" }]
 
 [project.scripts]
-worddict = "worddict.cli:main"
+jeans = "jeansdict.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
 
 [tool.setuptools.package-data]
-worddict = ["data/*.txt"]
+jeansdict = ["data/*.txt"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

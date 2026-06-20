@@ -1,6 +1,7 @@
-# worddict
+# Jeans Dictionary Tool
 
-A small command-line dictionary / word tool written in Python.
+A small command-line dictionary / word tool written in Python. The CLI is
+invoked as `jeans` and the importable package is `jeansdict`.
 
 It provides two commands:
 
@@ -14,7 +15,7 @@ It provides two commands:
 ```
 .
 ├── src/
-│   └── worddict/
+│   └── jeansdict/
 │       ├── __init__.py
 │       ├── wordstat.py        # word statistics
 │       ├── anagrams.py        # anagram finder
@@ -40,7 +41,7 @@ offline with no extra setup.
 Requires Python 3.9+. The tool uses only the standard library at runtime.
 
 ```bash
-# Install the package and the `worddict` CLI
+# Install the package and the `jeans` CLI
 make install
 
 # Or, for development (editable install + test dependencies)
@@ -52,12 +53,12 @@ These wrap the equivalent `pip` commands (`pip install .` and
 
 ## Usage
 
-After installing, use the `worddict` command:
+After installing, use the `jeans` command:
 
 ### `wordstat`
 
 ```console
-$ worddict wordstat hello
+$ jeans wordstat hello
 Word:        hello
 Syllables:   2
 Vowels:      2
@@ -65,7 +66,7 @@ Consonants:  3
 Palindrome:  no
 Reversed:    olleh
 
-$ worddict wordstat racecar
+$ jeans wordstat racecar
 Word:        racecar
 Syllables:   3
 Vowels:      3
@@ -77,7 +78,7 @@ Reversed:    racecar
 ### `anagrams`
 
 ```console
-$ worddict anagrams listen
+$ jeans anagrams listen
 Anagrams of 'listen' (5 found):
   enlist
   inlets
@@ -86,7 +87,7 @@ Anagrams of 'listen' (5 found):
   tinsel
 
 # Include the word itself in the results
-$ worddict anagrams listen --include-self
+$ jeans anagrams listen --include-self
 ```
 
 ### Running without installing
@@ -94,7 +95,7 @@ $ worddict anagrams listen --include-self
 You can also run the CLI directly from the source tree:
 
 ```bash
-PYTHONPATH=src python3 -m worddict.cli wordstat hello
+PYTHONPATH=src python3 -m jeansdict.cli wordstat hello
 ```
 
 ## Library use
@@ -102,7 +103,7 @@ PYTHONPATH=src python3 -m worddict.cli wordstat hello
 The functions are importable too:
 
 ```python
-from worddict import word_stats, find_anagrams
+from jeansdict import word_stats, find_anagrams
 
 word_stats("level")
 # {'word': 'level', 'syllables': 2, 'vowels': 2,

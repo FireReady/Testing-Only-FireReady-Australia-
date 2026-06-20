@@ -1,4 +1,4 @@
-# Runtime dependencies: none — worddict uses only the Python standard library.
+# Runtime dependencies: none — the Jeans Dictionary Tool uses only the Python standard library.
 
 # Development / test dependencies:
 pytest>=7.0

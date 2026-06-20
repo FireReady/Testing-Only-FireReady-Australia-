@@ -2,7 +2,7 @@
 
 import pytest
 
-from worddict.anagrams import _signature, find_anagrams
+from jeansdict.anagrams import _signature, find_anagrams
 
 
 @pytest.fixture

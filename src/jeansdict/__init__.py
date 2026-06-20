@@ -1,4 +1,4 @@
-"""worddict: a small CLI dictionary/word tool."""
+"""jeansdict: the Jeans Dictionary Tool, a small CLI dictionary/word tool."""
 
 from .wordstat import (
     word_stats,
